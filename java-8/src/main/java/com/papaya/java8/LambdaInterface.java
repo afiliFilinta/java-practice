@@ -1,4 +1,4 @@
-package com.papaya;
+package com.papaya.java8;
 
 @FunctionalInterface
 public interface LambdaInterface {

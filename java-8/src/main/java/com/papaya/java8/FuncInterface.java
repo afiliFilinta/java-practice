@@ -1,6 +1,13 @@
 package com.papaya.java8;
 
+import java.util.Objects;
+
 @java.lang.FunctionalInterface
 public interface FuncInterface {
-    public abstract void abc();
+    void oneAbstractMethod();
+
+    default void defaultMethod(String str){
+        Objects.nonNull(str);
+        System.out.println(str);
+    }
 }

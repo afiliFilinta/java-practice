@@ -19,6 +19,8 @@ public class StreamApi {
     //  skip()
 
 
+
+
     public static void main(String[] args) {
 
         // Stream.of
@@ -38,7 +40,7 @@ public class StreamApi {
         for (int i = 0; i < 10; i++) {
             list.add(i);
         }
-        list.stream().forEach(System.out::println);
+        list.forEach(System.out::println);
         List<Integer> secondList = list.stream().filter(e -> e % 2 == 0).collect(Collectors.toList());
         Integer[] array = list.stream().filter(i -> i % 2 == 0).toArray(Integer[]::new);
 
